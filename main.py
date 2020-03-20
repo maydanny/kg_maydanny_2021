@@ -15,4 +15,4 @@ def mapping_exists(s1, s2):
     else: return False
     
 
-print (mapping_exists ("dog", "dog"))
+
