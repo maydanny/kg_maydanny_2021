@@ -1,7 +1,10 @@
 def mapping_exists(s1, s2):          
     dict_s1 = {}
     dict_s2 = {}
-    
+
+    if s1 == s2:
+        return True
+
     for i,value in enumerate(s1):
         dict_s1[value] = dict_s1.get(value,[])+[i]
             
@@ -12,3 +15,4 @@ def mapping_exists(s1, s2):
     else: return False
     
 
+print (mapping_exists ("dog", "dog"))
